@@ -42,7 +42,6 @@ public class War {
             this.msg="A Saxon has died in combat";
         }
         return result;
-       // return this.msg;
     }
 
     public String saxonAttack() {
@@ -58,12 +57,9 @@ public class War {
         if (randomViking.getHealth() <= 0) {
             this.msg= listV.get(randomVikingIndex).getName() + "has died in act of combat";
             this.listV.remove(randomVikingIndex);
-//            this.msg="A Saxon has died in combat";
         } else {
-        //if(randomViking.getHealth()>0){
             this.msg=listV.get(randomVikingIndex).getName() + "has received" + listS.get(randomSaxonIndex).getStrength() + "points of damage";
         }
-//           return result;
         return this.msg;
     }
 }
